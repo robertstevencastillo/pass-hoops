@@ -33,8 +33,8 @@ router.post("/", (request, response) => {
   try {
     const mailOptions = {
       from: request.body.email,
-      // to: `${process.env.GMAIL_MILLZ},${process.env.GMAIL_ROB}`,
-      to: `${process.env.GMAIL_ROB}`,
+      to: `${process.env.GMAIL_MILLZ}`,
+      // to: `${process.env.GMAIL_ROB}`,
       subject: `Training Inquiry: ${request.body.firstName} ${request.body.lastName}`,
       html: `${request.body.message} <p> Customer's Phone Number: ${request.body.phoneNumber}</p>`,
     };
