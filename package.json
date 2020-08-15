@@ -1,0 +1,33 @@
+{
+  "name": "pass-hoops",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "client": "cd ./client && npm start",
+    "backend": "nodemon app.js",
+    "dev": "concurrently -n 'backend,client' -c 'red,green' \"npm run backend\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robertstevencastillo/pass-hoops.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robertstevencastillo/pass-hoops/issues"
+  },
+  "homepage": "https://github.com/robertstevencastillo/pass-hoops#readme",
+  "dependencies": {
+    "concurrently": "^5.3.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.4.11",
+    "nodemon": "^2.0.4"
+  }
+}
