@@ -1,10 +1,13 @@
 header {
   position: relative;
-  /* height: 65vh; */
   height: 100vh;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
+}
+
+.no-display {
+  display: none;
 }
 
 header video {
@@ -33,34 +36,6 @@ header .overlay {
   left: 0;
   height: 100%;
   width: 100%;
-  /* background-color: black; */
   opacity: 0.5;
   z-index: 1;
-}
-
-.contact-link {
-  text-decoration: underline;
-  color: white;
-}
-
-.contact-link:hover {
-  color: orange;
-}
-
-/* @media (pointer: coarse) and (hover: none) {
-  header {
-    background: url("/public/videos/pass_vid_one.mov") black no-repeat center center scroll;
-  }
-  header video {
-    display: none;
-  }
-} */
-
-@media only screen and (max-width: 768px) {
-  /* .intro-video {
-    display: none;
-  } */
-  /* header video {
-    object-fit: cover;
-  } */
 }

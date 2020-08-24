@@ -23,12 +23,14 @@
   },
   "homepage": "https://github.com/robertstevencastillo/pass-hoops#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "concurrently": "^5.3.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "googleapis": "^59.0.0",
     "morgan": "^1.10.0",
     "nodemailer": "^6.4.11",
+    "nodemailer-mailgun-transport": "^2.0.0",
     "nodemon": "^2.0.4"
   }
 }

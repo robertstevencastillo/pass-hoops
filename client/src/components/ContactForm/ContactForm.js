@@ -103,7 +103,7 @@ function ContactForm(props) {
                   Message:
                 </label>
                 <div className="col-sm-10">
-                  <textarea className="form-control" rows={5} id="message" defaultValue={""} value={message} onChange={e => setMessage(e.target.value)} />
+                  <textarea className="form-control" rows={5} id="message" value={message} onChange={e => setMessage(e.target.value)} />
                 </div>
               </div>
               <div className="form-group">

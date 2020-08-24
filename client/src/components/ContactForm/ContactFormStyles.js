@@ -5,6 +5,7 @@ const ContactFormStyles = styled.div`
     padding: 4%;
     height: 400px;
     margin: auto;
+    width: 100%;
   }
   .col-md-3 {
     background: #ff9b00;

@@ -1,0 +1,32 @@
+.jumbotron-text-container-flex-parent {
+  display: flex;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+}
+
+.jumbotron-text-container-flex-child {
+  width: 100%;
+}
+
+.pass-intro {
+  font-weight: bolder;
+  font-size: 4rem;
+  color: white;
+}
+
+.contact-link {
+  text-decoration: underline;
+  color: white;
+}
+
+.contact-link:hover {
+  cursor: pointer;
+  color: orange;
+}
+
+@media only screen and (max-width: 700px) {
+  .pass-intro {
+    font-size: 2rem;
+  }
+}

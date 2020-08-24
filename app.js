@@ -3,13 +3,17 @@ const path = require("path");
 const morgan = require("morgan");
 const app = express();
 const contact = require("./routes/contact");
+// var bodyParser = require("body-parser");
 
 const PORT = process.env.PORT || 5000;
 require("dotenv").config();
 
 // Parse Data
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
+// app.use(express.urlencoded({ extended: false }));
+// app.use(bodyParser.urlencoded({ extended: true }));
+// app.use(bodyParser.json());
 
 //HTTP request logger
 app.use(morgan("tiny"));
