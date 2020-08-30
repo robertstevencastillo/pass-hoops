@@ -23,7 +23,6 @@ function ContactForm(props) {
     axios
       .post("/contact", { ...payload })
       .then(data => {
-        console.log(data);
         Swal.fire({
           title: `Thank you ${firstName} for your message, we'll get back to you as soon as we can`,
           icon: "success",
