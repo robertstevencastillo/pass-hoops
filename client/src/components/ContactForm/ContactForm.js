@@ -51,10 +51,6 @@ function ContactForm(props) {
   return (
     <ContactFormStyles>
       <div className="container contact">
-        {/* //eslint-disable-next-line to the line before. */}{" "}
-        <a href="#n" name="contact-form" className="contact-form-anchor-link">
-          .
-        </a>
         <div className="row">
           <div className="col-md-3">
             <div className="contact-info">

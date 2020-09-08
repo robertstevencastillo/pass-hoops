@@ -1,14 +1,23 @@
 import React from "react";
-import "./App.css";
-import IntroJumbotron from "./components/IntroJumbotron/IntroJumbotron";
-import ContactForm from "./components/ContactForm/ContactForm";
+import Home from './pages/home/Home'
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import PassModal from './components/PassModal/PassModal'
+import Layout from './components/Layout/Layout'
 
 function App() {
   return (
-    <div className="App">
-      <IntroJumbotron />
-      <ContactForm />
-    </div>
+    <Router>
+      <Switch>
+        <Layout>
+          <Route exact path="/">
+            <PassModal />
+          </Route>
+          <Route exact path='/home'>
+            <Home />
+          </Route>
+        </Layout>
+      </Switch>
+    </Router>
   );
 }
 

@@ -1,0 +1,43 @@
+.pass-video-text-overlay{
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  text-decoration:underline;
+  color: white;
+  font-size:1.1rem;
+  transition: .4s;
+}
+
+.pass-video-text-overlay:hover{
+  text-decoration:underline;
+  cursor: pointer;
+  font-size:1.3rem;
+  color:orange;
+}
+
+.pass-modal-video{
+  margin-top:0.3rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index:0;
+}
+
+/* 1. No object-fit support: */
+@media (min-aspect-ratio: 16/9) {
+  .pass-modal-video { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+  .pass-modal-video{ width: 300%; left: -100%; }
+}
+/* 2. If supporting object-fit, overriding (1): */
+@supports (object-fit: cover) {
+  .pass-modal-video {
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+  }
+}
+
