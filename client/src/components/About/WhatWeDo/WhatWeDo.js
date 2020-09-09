@@ -1,11 +1,13 @@
 import React from "react"
 import WhatWeDoStyles from './WhatWeDoStyles'
+import SectionDivider from '../../SectionDivider/SectionDivider'
 import TextDivider from '../../TextDivider/TextDivider'
 
 function WhatWeDo(props) {
   return (
     <WhatWeDoStyles>
-      <div className='divider'></div>
+      {/* <div className='divider'></div> */}
+      <SectionDivider />
       <div className='what-we-do-container'>
         <h3><em>What We Do</em></h3>
         <TextDivider />

@@ -1,12 +1,6 @@
 import styled from 'styled-components'
 
 const WhatWeDoStyles = styled.div`
-  .divider{
-    background-color:#DE6723;
-    height:50px;
-    margin-bottom: 5rem;
-  }
-
   p {
     width:80%;
   }
