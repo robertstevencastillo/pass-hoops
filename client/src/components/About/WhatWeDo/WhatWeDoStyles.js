@@ -6,13 +6,15 @@ const WhatWeDoStyles = styled.div`
     height:50px;
     margin-bottom: 5rem;
   }
+
+  p {
+    width:80%;
+  }
+  
   .what-we-do-container{
     display:flex;
     flex-direction:column;
     align-items:center;
-    width:80%;
-    margin-left:auto;
-    margin-right:auto;
     margin-bottom:5rem;
   }
 
@@ -20,8 +22,6 @@ const WhatWeDoStyles = styled.div`
     display:flex;
     flex-direction:row;
     justify-content:center;
-    align-items:center;
-
   }
 
   .what-we-provide-item{
@@ -32,15 +32,16 @@ const WhatWeDoStyles = styled.div`
     display:flex;
     flex-direction:column;
     align-items:center;
+
   }
 
   .what-we-provide-item-image{
     background-image: url('https://elitehoopsbasketball.com/wp-content/uploads/EliteHoopsBasketballSundaySkillsTrainingAtlanta.jpg');
     background-repeat: no-repeat;
     background-position:center center;
-    ${'' /* width:360px; */}
-    width:100%;
-    height:240px;  
+    width:90%;
+    height:240px;
+    margin-bottom:1rem;  
   }
 
   .what-we-provide-item-button{
@@ -68,10 +69,14 @@ const WhatWeDoStyles = styled.div`
 
     .what-we-provide-item{
       width:100%;
-      justify-content:center;
+      margin-right:0rem;
+    }
+
+    p{
+      width:90%;
+      text-align:center;
     }
   }
-  
 `;
 
 export default WhatWeDoStyles

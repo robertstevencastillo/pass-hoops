@@ -13,7 +13,11 @@ const DisplaySocialMediaStyles = styled.div`
   }
 
   .social-media-post{
-    margin-right:2rem;
+    margin-right:2.5rem;
+  }
+
+  h3{
+    text-align:center;
   }
 
   h3 em a{
@@ -25,7 +29,7 @@ const DisplaySocialMediaStyles = styled.div`
     color:#DE6723;
   }
 
-@media screen and (max-width:1110px){
+@media screen and (max-width:1100px){
   .social-media-posts{
     flex-direction:column;
     align-items:center;
@@ -33,11 +37,32 @@ const DisplaySocialMediaStyles = styled.div`
   }
 
   .social-media-post{
-    margin-right:0;
+    margin-right:auto;
+    margin-left:auto;
     margin-bottom:2rem;
-    width:100%;
+    width:45rem;    
   }
 }
+
+@media screen and (max-width:780px){
+  .social-media-post{
+    width:35rem;
+  }
+}
+
+@media screen and (max-width:780px){
+  .social-media-post{
+    width:20rem;
+  }
+}
+
+@media screen and (max-width:400px){
+  .social-media-post{
+    width:100%;
+    max-width:100%;
+  }
+}
+
 `;
 
 export default DisplaySocialMediaStyles;

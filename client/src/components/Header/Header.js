@@ -1,14 +1,5 @@
 import React, { useState } from "react"
 import './Header.css'
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-} from 'reactstrap';
 import { Link } from 'react-router-dom'
 
 function Header(props) {
@@ -22,7 +13,7 @@ function Header(props) {
           <img alt='PASS' className='navbar-brand-logo' src={process.env.PUBLIC_URL + "/images/pass-logo.jpg"} />
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
+        <Collapse animation={false} transition={null} isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
               <Link to='/about'> <NavLink>About</NavLink>   </Link>

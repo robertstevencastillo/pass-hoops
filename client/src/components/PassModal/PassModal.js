@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { withRouter } from 'react-router-dom'
 import './PassModal.css'
 
 function PassModal(props) {
+  const videoElementRef = useRef(null);
+
+  useEffect(() => {
+    videoElementRef.current.play();
+  }, [])
 
   function enterPassHoops() {
     props.history.push('/home')
@@ -17,6 +22,7 @@ function PassModal(props) {
           playsInline="playsinline"
           autoPlay="autoplay"
           loop="loop"
+          ref={videoElementRef}
         >
           <source src={process.env.PUBLIC_URL + "/videos/pass_vid_two.mp4"} type="video/mp4" />
         </video>

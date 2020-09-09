@@ -8,7 +8,7 @@ function DisplaySocialMedia(props) {
     <DisplaySocialMediaStyles>
       <div className='display-social-media-container'>
         <h3>
-          <em>Check us out on Instagram <a target="_blank" rel="noopener noreferrer" href='https://www.instagram.com/p.a.s.s.hoops/'>@PassTraining</a>
+          <em>Check us out on Instagram <a target="_blank" rel="noopener noreferrer" href='https://www.instagram.com/p.a.s.s.hoops/'>@p.a.s.s.hoops</a>
           </em>
         </h3>
         <TextDivider />
